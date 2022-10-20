@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>weatherAPI</title>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+<div id="infoUI"  class="flex-col-center">
+  <h1>WeatherAPI</h1>
+  <div id="inputBoard" class="flex-row-center">
+    <div id="infoInput" class="flex-row-center">
+      <p id="cityLegend" class="flex-row-center">City Name</p>
+      <input id="cityNameID"  type="text"></input>
+    </div>
+  </div>
+  <button id="subButton"  class="flex-row-center" onclick="loadCityName()">Submit</button>
+
+  <div class="mainBoard">
+    <p>City Name</p>
+    <p id="cityNameDisplay" class='twoCols' ></p>
+
+    <p>Description</p>
+    <p id="weatherDesc" class='twoCols'></p>
+
+    <p>Temperature</p>
+    <p id="tempDisplay" style="text-align: center;"></p>
+    <p>Celsius</p>
+    <p>Wind speed</p>
+    <p id="windDisplay" style="text-align: center;"></p>
+    <p>meter/sec</p>
+  </div>
+</div>
+	</body>
+	<script src="main.js"></script>
+</html>
