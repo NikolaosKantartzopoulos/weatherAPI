@@ -1,0 +1,88 @@
+:root {
+  --main-bg-color: rgba(150,150,255,0.9);
+}
+html {
+  height: 100%;
+  user-select: none;
+}
+body{
+  margin: 3vh auto;
+  color: white;
+  font-size: 2rem;
+  background-color: lightgrey;
+  height: 100%;
+}
+.flex-row-center {
+  display: flex; 
+  flex-flow: row wrap;  
+  align-items: center; 
+  justify-content: center;
+}
+.flex-col-center {
+  display: flex; 
+  flex-flow: column wrap;  
+  align-items: center; 
+  justify-content: center;
+}
+h1 {
+  border: 5px solid white;
+  background-color: var(--main-bg-color);
+  margin: 1px;
+  padding: 1rem;
+  border-radius: 2vw;
+}
+
+#infoUI{
+  height: 100%;
+  margin: auto;
+  gap:20px;
+}
+.mainBoard {
+  display:grid; 
+  grid-template-columns: repeat(3, 300px);
+}
+.mainBoard>p{
+  color: white;
+  border: 5px solid white;
+  background-color:  var(--main-bg-color);
+  margin: 1px;
+  padding: 1rem;
+}
+.twoCols {
+  grid-column-start: 2; 
+  grid-column-end: 4;
+  text-align: center;
+}button{
+  background-color: var(--main-bg-color);
+  padding: 10px;
+  width: 200px;
+  height: 70px;
+  font-size: 2rem;
+  color: white;
+  border: 5px solid white;
+  border-radius: 2vw;
+  pointer: cursor ;
+}
+
+#cityNameID, #cityLegend {
+  color: white;
+  background-color: var(--main-bg-color);
+  padding: 2px;
+  width: 300px;
+  height: 70px;
+  font-size: 2.5rem;
+  border: 5px solid white;
+  text-align: center;
+  cursor: pointer ;
+}
+#cityNameID {
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+#cityNameID:focus {
+  background-color: rgba(150,150,255,1);
+}
+#cityLegend {
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+}
